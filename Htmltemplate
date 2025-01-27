@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<!--Atticus McDaniel 1/27/25 My first webpage-->
+<html lang="en">
+    <head>
+        <title> My Web page template </title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <p> I hosted a TTRPG session for a friend, in which we started an adventure of a space captain whom's goal is to make as much money as possible </p>
+        <h3> My favorite color is teal </h3>
+        <hr> <!--this tag has been deprecated thanks to CSS-->
+    </body>
+</html>
