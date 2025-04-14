@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday Candy Wonderland</title>
+
+    <style>
+        * {box-sizing: border-box;}
+
+        #wrapper {
+            padding:0;
+        margin:auto;
+        width:90%;
+        border: 2px solid #000;
+        }
+
+        #body {
+            display: flex;
+            flex-direction: column;
+            max-width:90%;
+            background: linear-gradient(to right,#80CBC4 50%, rgb(25, 145, 174));
+        }
+
+        #header {
+            padding: 1em;
+            text-align: center;
+            background-color: #a6d4d4;
+        }
+
+        main {
+            padding:10px;
+        }
+
+        nav {
+            font-weight: bold;
+            margin-top: 0;
+            padding: 0;
+            font-size: 1.5em;
+            border-bottom: 1px solid #000033;
+        }
+        /* Container for navigation list --the actual list */
+        nav ul {
+            display: flex;
+            flex-direction:column;
+            justify-content: flex-end;
+            padding: 10px;
+            list-style-type: none;
+            margin: 0;
+            font-size: 1.2em;
+        }
+        /* Container for navigation list items (the words and links) */
+        nav li {padding:10px; }
+        nav a { text-decoration: none; }
+        nav a:link { color: #33302f; }
+        nav a:visited { color: #0a9739; }
+        nav a:hover { color: #ce1db0; }
+        article {
+            background: #cea2d4;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:1em;
+            padding:20px;
+        }
+
+        article img {
+            max-width: 100%;
+            height: auto;}
+
+        footer {
+            background: #26A69A;
+            padding: 1em;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+        nav ul {
+            display: flex; /* Mobile: Nav list as column */
+            flex-flow: column;
+            flex-wrap: nowrap;
+        }
+        nav li {
+            border-top: 2px solid #08720d;
+            /* Mobile: Nav list items with top border */
+        }
+        main {
+            text-align: center;
+        }
+        ul {
+            text-align: left;/* Mobile: Unordered lists left-aligned */
+        }
+        }
+
+        @media (min-width: 900px) {
+        /* Desktop: Nav list as row, top padding */
+        nav ul {
+            display: flex;
+            flex-flow: row;
+            flex-wrap: nowrap;
+            padding-top: 1em;
+        }
+        /* Desktop: Article flex wrap, bottom border */
+        article {
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: 2px solid #b9621a;
+        }
+        /* Desktop: Sections flex, min-width, padding */
+        section {
+        flex: 1;
+        min-width: 300px;
+        padding: 10px;
+        }
+        }
+    </style>
+
+</head>
+<body>
+    <div id="wrapper">
+    <header>
+        <h1>Holiday Candy Delights</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Bunnies</a></li>
+            <li><a href="#">Peeps</a></li>
+            <li><a href="#">Jelly Beans</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <section>
+                <h2>Chcolate Bunnies</h2>
+                <img src="chocolate-bunny.jpg" alt="Chocolate Bunny">
+                <p>Chocolate bunnies are a classic holiday treat, enjoyed by children and adults alike. They come in various sizes and flavors, from milk chocolate to dark chocolate. </p>
+            </section>
+            <section>
+                <h2>Marshmallow Peeps</h2>
+                <img src="marshmallow-peeps.jpg" alt="Marshmallow Peeps">
+                <p>Marshmallow Peeps are a sweet and colorful holiday staple. These marshmallow candies are shaped like chicks or bunnies and come in a variety of colors. </p>
+            </section>
+
+            <section>
+                <h2>Jelly Beans</h2>
+                <img src="jelly-beans.jpg" alt="Jelly Beans">
+                <p>Jelly beans are a colorful and chewy candy that's a favorite during Holiday. They come in a wide range of flavors, making them a fun treat for everyone. </p>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2024 Holiday Candy</p>
+    </footer>
+</body>
+</html>
