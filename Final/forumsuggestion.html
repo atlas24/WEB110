@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!--Atticus McDaniel Final CSS 5/13/2025-->
+<html lang="en">
+    <head>
+        <title>suggestions</title>
+        <meta charset="utf-8">
+
+        <style>
+            h1 {
+                text-align: center;
+            }
+
+            form{
+                text-align: center;
+            }
+
+            img{
+                width: 500px;
+                height: auto;
+                border-radius: 8px;
+                margin-bottom: 1.5rem;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body{
+                font-family: Arial, sans-serif;
+                background: linear-gradient(0deg, BLACK, gray);
+                color: #cbd8e3db;
+                line-height: 1.6;
+                background-color: #f0f8ff;
+            }
+
+            nav{
+                background-color: #34495e;
+                padding: 1.5rem 0;
+            }
+
+            nav ul{
+                list-style-type: none;
+                display: flex;
+                justify-content: center;
+                gap: 3rem;
+            }
+
+            nav a{
+                color: white;
+                text-decoration: none;
+                font-size: 1.2rem;
+            }
+
+            Nav a:hover{
+                color: #d9e8d8;
+                text-decoration: underline;
+            }
+
+            main {
+                max-width: 90%;
+                margin: 0 auto;
+                padding: 2rem;
+            }
+
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 25%;
+            }   
+        </style>
+    </head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="crimsonrose.html">The Crimson Rose</a></li>
+            <li><a href="historyofiris.html">Crimson Iris Battles</a></li>
+            <li><a href="whiskycompany.html">LG 1st Whisky Company</a></li>
+            <li><a href="historyofwhisky.html">Whisky Company Battles</a></li>
+            <li><a href="forumsuggestion.html">suggestion form</a></li>
+        </ul>
+    </nav>
+    <section>
+    <h1>Suggestion Form</h1>
+    <img src="alizequestion.png" alt="Alize's wolverine mech at a 45 degree angle with a question mark above it" class="center">
+    <form action="/submit-suggestion" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="suggestion">Your Suggestion:</label><br>
+        <textarea id="suggestion" name="suggestion" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="category">Category:</label><br>
+        <select id="category" name="category" required>
+            <option value="website">website suggestion</option>
+            <option value="name">Soldier name suggestion</option>
+            <option value="story">Story suggestion</option>
+            <option value="bug">Bug Report</option>
+        </select><br><br>
+
+        <p>If a story or charater suggestion, which unit?</p>
+        <input type="radio" id="iris" name="unit" value="1">
+        <label for="age1">Crimson Iris</label><br>
+        <input type="radio" id="lyran" name="unit" value="2">
+        <label for="age2">Whisky Company</label><br>  
+        <input type="radio" id="clan" name="unit" value="3">
+        <label for="age3">Unamed clan star</label><br><br>
+
+        <input type="checkbox" id="contact" name="contact" value="yes">
+        <label for="day">I would like to be contacted about my suggestion</label><br><br>
+
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+    </section>
+
+
+    <p>Want to email me with more detail? Do so here!</p>
+    <a href="mailto:amcdan29@stumail.jccc.edu">Send an Email to Atticus</a>
+</body>
+</html>
